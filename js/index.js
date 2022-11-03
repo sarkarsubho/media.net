@@ -29,22 +29,22 @@ function changeNavBackground() {
     nav.style.backgroundColor = "white";
     signbtn.style.border = "1px solid gray";
     signbtn.style.color = "gray";
-    contactusBtn.style.background="rgb(255, 98, 164)";
-    contactusBtn.style.color="white";
+    contactusBtn.style.background = "rgb(255, 98, 164)";
+    contactusBtn.style.color = "white";
   } else {
     nav.style.color = "white";
     nav.style.background = "local";
     signbtn.style.border = "1px solid white";
     signbtn.style.color = "white";
-    contactusBtn.style.background="white";
-    contactusBtn.style.color="#717171";
+    contactusBtn.style.background = "white";
+    contactusBtn.style.color = "#717171";
   }
 }
 window.addEventListener("scroll", changeNavBackground);
 
 function reveal() {
   var revealleft = document.querySelectorAll(".revealleft");
-   var revealright = document.querySelectorAll(".revealright");
+  var revealright = document.querySelectorAll(".revealright");
   for (var i = 0; i < revealleft.length; i++) {
     var windowHeight = window.innerHeight;
     var elementTop = revealleft[i].getBoundingClientRect().top;
@@ -56,9 +56,9 @@ function reveal() {
       revealleft[i].classList.remove("active");
     }
   }
-  console.log(windowHeight)
-  
-   for (var j = 0; j < revealright.length; j++) {
+  console.log(windowHeight);
+
+  for (var j = 0; j < revealright.length; j++) {
     var windowHeight = window.innerHeight;
     var elementTop = revealright[j].getBoundingClientRect().top;
     var elementVisible = 150;
@@ -73,16 +73,17 @@ function reveal() {
 
 window.addEventListener("scroll", reveal);
 
-function showBackToTop(){
+function showBackToTop() {
   var windowHeight = window.scrollY;
-  var backToTopButton=document.getElementById("upArrow");
-  var viportHight=window.visualViewport.height;
-  if(windowHeight>viportHight){
-    backToTopButton.style.display="block"
-  }else{
-    backToTopButton.style.display="none"
+  var backToTopButton = document.getElementById("upArrow");
+  var viportHight = window.visualViewport.height;
+  if (windowHeight > viportHight) {
+    backToTopButton.style.display = "block";
+  } else {
+    backToTopButton.style.display = "none";
   }
-
 }
 
 window.addEventListener("scroll", showBackToTop);
+
+
