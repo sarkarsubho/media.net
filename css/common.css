@@ -1,0 +1,62 @@
+
+.btn{
+    padding: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.btn:active{
+    opacity: 0.7;
+}
+.heading{
+ font-size: 55px;
+ font-weight: bold;
+ text-align: center;
+ padding-top: 50px;
+ color: #4C4C4C;
+ font-family: "Roboto", sans-serif;
+}
+.subheading{
+    font-size: 30px;
+    color: #4C4C4C;
+    font-family: "Roboto", sans-serif;
+}
+.details{
+    color:#A4A4A5;
+    font-family: "Roboto", sans-serif;
+    font-size: 21px;
+}
+.revealleft{
+    position: relative;
+    transform: translateX(-150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+  .revealleft.active{
+    transform: translateX(0);
+    opacity: 1;
+  }
+  
+  .revealright{
+    position: relative;
+    transform: translateX(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+  .revealright.active{
+    transform: translateX(0);
+    opacity: 1;
+  }
+@media only screen and (max-width:600px) {
+ .heading{
+    font-size: 45px;
+    font-weight: 900;
+ }
+}
+@media only screen and (max-width:500px) {
+    .heading{
+       font-size: 35px;
+       font-weight: 900;
+    }
+   }
