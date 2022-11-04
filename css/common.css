@@ -26,6 +26,7 @@
     font-size: 21px;
 }
 .revealleft{
+  max-width: 400px;
     position: relative;
     transform: translateX(-150px);
     opacity: 0;
@@ -38,16 +39,23 @@
   }
   
   .revealright{
+    max-width: 400px;
     position: relative;
     transform: translateX(150px);
     opacity: 0;
     transition: 1s all ease;
+    display: flex;
+    /* place-items: center; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   
   .revealright.active{
     transform: translateX(0);
     opacity: 1;
   }
+ 
 @media only screen and (max-width:600px) {
  .heading{
     font-size: 45px;

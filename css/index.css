@@ -245,6 +245,8 @@
 .adDecriptionDetail {
   display: flex;
   margin-top:50px;
+  justify-content: space-around;
+  align-items: center;
 }
 .adDecriptionDetail img {
   max-width: 50%;
@@ -311,6 +313,7 @@ footer{
   align-items: center;
   gap: 40px;
   background-color: #F8F9FB;
+  font-family: "Roboto", sans-serif;
 }
 #footerMain{
   display: flex;
