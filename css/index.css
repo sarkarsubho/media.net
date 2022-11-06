@@ -4,6 +4,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+body{
+  overflow-x: hidden;
+}
 .landing {
   background-image: url("https://s31073.pcdn.co/wp-content/themes/media.net/images/home-fg.svg");
   background-size:auto;
